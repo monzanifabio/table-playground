@@ -1,0 +1,64 @@
+@import "@krakentech/tako-html/lib/tako.min.css";
+@import "./table.css";
+
+:root {
+  color: #1e0d35;
+  font-family: "Noto Sans", system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  background: #f6f5f8;
+  color: #1e0d35;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+}
+
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #e9e9ec;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  color: #1e0d35;
+}
+
+.section-spacing {
+  margin-top: 2rem;
+}
+
+.section-heading {
+  margin-bottom: 1rem;
+}
+
+.section-heading h2 {
+  margin: 0 0 0.5rem;
+}
+
+.muted {
+  color: #6b6375;
+}
+
+h2 {
+  margin: 0 0 0.5rem;
+  color: #1e0d35;
+}
+
+p {
+  margin: 0;
+}

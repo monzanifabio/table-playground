@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Playground</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <span class="navbar-brand">Table Playground</span>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode">Dark Mode</button>
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- Basic Table -->
+      <section class="section-spacing">
+        <div class="section-heading">
+          <h2>Basic Table</h2>
+          <p class="muted">Clean and simple table without any styling variations.</p>
+        </div>
+        <div class="tako-table__wrapper">
+          <table class="tako-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alice Johnson</td>
+                <td>alice@example.com</td>
+                <td>Engineering</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Bob Smith</td>
+                <td>bob@example.com</td>
+                <td>Design</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Carol White</td>
+                <td>carol@example.com</td>
+                <td>Marketing</td>
+                <td>Inactive</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Table with Actions -->
+      <section class="section-spacing">
+        <div class="section-heading">
+          <h2>Table with Actions</h2>
+          <p class="muted">Interactive elements for row-level operations.</p>
+        </div>
+        <div class="tako-table__wrapper">
+          <table class="tako-table">
+            <thead>
+              <tr>
+                <th>User</th>
+                <th>Email</th>
+                <th>Last Login</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alex Rivera</td>
+                <td>alex@example.com</td>
+                <td>2024-01-20</td>
+                <td>
+                  <button class="tako-button tako-button--primary">Edit</button>
+                  <button class="tako-button tako-button--danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Nina Patel</td>
+                <td>nina@example.com</td>
+                <td>2024-01-18</td>
+                <td>
+                  <button class="tako-button tako-button--primary">Edit</button>
+                  <button class="tako-button tako-button--danger">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>Chris Evans</td>
+                <td>chris@example.com</td>
+                <td>2024-01-10</td>
+                <td>
+                  <button class="tako-button tako-button--primary">Edit</button>
+                  <button class="tako-button tako-button--danger">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Responsive Table -->
+      <section class="section-spacing">
+        <div class="section-heading">
+          <h2>Responsive Table</h2>
+          <p class="muted">Wraps in a responsive container for mobile devices.</p>
+        </div>
+        <div class="tako-table__wrapper">
+          <table class="tako-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Transaction ID</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2024-01-20</td>
+                <td>TXN-789456</td>
+                <td>Office Supplies</td>
+                <td>Equipment</td>
+                <td>$245.50</td>
+              </tr>
+              <tr>
+                <td>2024-01-19</td>
+                <td>TXN-789455</td>
+                <td>Cloud Services</td>
+                <td>Software</td>
+                <td>$1,250.00</td>
+              </tr>
+              <tr>
+                <td>2024-01-18</td>
+                <td>TXN-789454</td>
+                <td>Team Lunch</td>
+                <td>Meals</td>
+                <td>$187.75</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Complex Asset Table -->
+      <section class="section-spacing">
+        <div class="section-heading">
+          <h2>Complex Asset Table</h2>
+          <p class="muted">Inventory-style table with links, tags, and structured asset metadata.</p>
+        </div>
+        <div class="tako-table__wrapper">
+          <table class="tako-table">
+            <thead>
+              <tr>
+                <th>Asset Number</th>
+                <th>Serial Number</th>
+                <th>Status</th>
+                <th>Location</th>
+                <th>Manufacturer</th>
+                <th>Model Name</th>
+                <th>Firmware</th>
+                <th>Purchase Date</th>
+                <th>Order Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">AST-2401</a></td>
+                <td>SN-7K29-441A</td>
+                <td><span class="tako-tag">Active</span></td>
+                <td>Milan - HQ</td>
+                <td>Cisco</td>
+                <td>Catalyst 9300</td>
+                <td>17.9.4</td>
+                <td>2024-02-14</td>
+                <td>PO-88451</td>
+              </tr>
+              <tr>
+                <td><a href="#">AST-2402</a></td>
+                <td>SN-3V18-992D</td>
+                <td><span class="tako-tag">Maintenance</span></td>
+                <td>Rome - Branch A</td>
+                <td>Dell</td>
+                <td>PowerEdge R650</td>
+                <td>2.11.0</td>
+                <td>2023-11-08</td>
+                <td>PO-87320</td>
+              </tr>
+              <tr>
+                <td><a href="#">AST-2403</a></td>
+                <td>SN-9X51-772H</td>
+                <td><span class="tako-tag">Retired</span></td>
+                <td>Turin - Storage</td>
+                <td>HP</td>
+                <td>ProLiant DL360</td>
+                <td>1.8.2</td>
+                <td>2021-06-19</td>
+                <td>PO-74119</td>
+              </tr>
+              <tr>
+                <td><a href="#">AST-2404</a></td>
+                <td>SN-5N64-113P</td>
+                <td><span class="tako-tag">Active</span></td>
+                <td>Naples - Datacenter</td>
+                <td>Lenovo</td>
+                <td>ThinkSystem SR630</td>
+                <td>3.4.7</td>
+                <td>2024-01-03</td>
+                <td>PO-88102</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Complex Asset Table with Sticky First Column -->
+      <section class="section-spacing">
+        <div class="section-heading">
+          <h2>Complex Asset Table (Sticky First Column)</h2>
+          <p class="muted">Asset inventory with sticky asset number column that stays visible while scrolling horizontally.</p>
+        </div>
+        <div class="tako-table__wrapper">
+          <table class="tako-table">
+            <thead>
+              <tr>
+                <th class="tako-table__sticky-col">Asset Number</th>
+                <th>Serial Number</th>
+                <th>Status</th>
+                <th>Location</th>
+                <th>Manufacturer</th>
+                <th>Model Name</th>
+                <th>Firmware</th>
+                <th>Purchase Date</th>
+                <th>Order Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tako-table__sticky-col"><a href="#">AST-2401</a></td>
+                <td>SN-7K29-441A</td>
+                <td><span class="tako-tag">Active</span></td>
+                <td>Milan - HQ</td>
+                <td>Cisco</td>
+                <td>Catalyst 9300</td>
+                <td>17.9.4</td>
+                <td>2024-02-14</td>
+                <td>PO-88451</td>
+              </tr>
+              <tr>
+                <td class="tako-table__sticky-col"><a href="#">AST-2402</a></td>
+                <td>SN-3V18-992D</td>
+                <td><span class="tako-tag">Maintenance</span></td>
+                <td>Rome - Branch A</td>
+                <td>Dell</td>
+                <td>PowerEdge R650</td>
+                <td>2.11.0</td>
+                <td>2023-11-08</td>
+                <td>PO-87320</td>
+              </tr>
+              <tr>
+                <td class="tako-table__sticky-col"><a href="#">AST-2403</a></td>
+                <td>SN-9X51-772H</td>
+                <td><span class="tako-tag">Retired</span></td>
+                <td>Turin - Storage</td>
+                <td>HP</td>
+                <td>ProLiant DL360</td>
+                <td>1.8.2</td>
+                <td>2021-06-19</td>
+                <td>PO-74119</td>
+              </tr>
+              <tr>
+                <td class="tako-table__sticky-col"><a href="#">AST-2404</a></td>
+                <td>SN-5N64-113P</td>
+                <td><span class="tako-tag">Active</span></td>
+                <td>Naples - Datacenter</td>
+                <td>Lenovo</td>
+                <td>ThinkSystem SR630</td>
+                <td>3.4.7</td>
+                <td>2024-01-03</td>
+                <td>PO-88102</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Complex Asset Table with Sticky First and Last Columns -->
+      <section class="section-spacing">
+        <div class="section-heading">
+          <h2>Complex Asset Table (Sticky First & Last Columns)</h2>
+          <p class="muted">Asset inventory with sticky asset number column on left and action buttons on right that stay visible during horizontal scroll.</p>
+        </div>
+        <div class="tako-table__wrapper">
+          <table class="tako-table">
+            <thead>
+              <tr>
+                <th class="tako-table__sticky-col">Asset Number</th>
+                <th>Serial Number</th>
+                <th>Status</th>
+                <th>Location</th>
+                <th>Manufacturer</th>
+                <th>Model Name</th>
+                <th>Firmware</th>
+                <th>Purchase Date</th>
+                <th>Order Number</th>
+                <th class="tako-table__sticky-col tako-table__sticky-col--right">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tako-table__sticky-col"><a href="#">AST-2401</a></td>
+                <td>SN-7K29-441A</td>
+                <td><span class="tako-tag">Active</span></td>
+                <td>Milan - HQ</td>
+                <td>Cisco</td>
+                <td>Catalyst 9300</td>
+                <td>17.9.4</td>
+                <td>2024-02-14</td>
+                <td>PO-88451</td>
+                <td class="tako-table__sticky-col tako-table__sticky-col--right">
+                  <button class="tako-button tako-button--primary">Edit</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="tako-table__sticky-col"><a href="#">AST-2402</a></td>
+                <td>SN-3V18-992D</td>
+                <td><span class="tako-tag">Maintenance</span></td>
+                <td>Rome - Branch A</td>
+                <td>Dell</td>
+                <td>PowerEdge R650</td>
+                <td>2.11.0</td>
+                <td>2023-11-08</td>
+                <td>PO-87320</td>
+                <td class="tako-table__sticky-col tako-table__sticky-col--right">
+                  <button class="tako-button tako-button--primary">Edit</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="tako-table__sticky-col"><a href="#">AST-2403</a></td>
+                <td>SN-9X51-772H</td>
+                <td><span class="tako-tag">Retired</span></td>
+                <td>Turin - Storage</td>
+                <td>HP</td>
+                <td>ProLiant DL360</td>
+                <td>1.8.2</td>
+                <td>2021-06-19</td>
+                <td>PO-74119</td>
+                <td class="tako-table__sticky-col tako-table__sticky-col--right">
+                  <button class="tako-button tako-button--primary">Edit</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="tako-table__sticky-col"><a href="#">AST-2404</a></td>
+                <td>SN-5N64-113P</td>
+                <td><span class="tako-tag">Active</span></td>
+                <td>Naples - Datacenter</td>
+                <td>Lenovo</td>
+                <td>ThinkSystem SR630</td>
+                <td>3.4.7</td>
+                <td>2024-01-03</td>
+                <td>PO-88102</td>
+                <td class="tako-table__sticky-col tako-table__sticky-col--right">
+                  <button class="tako-button tako-button--primary">Edit</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Wrapping and Truncated Cell Content -->
+      <section class="section-spacing">
+        <div class="section-heading">
+          <h2>Wrapping and Truncated Cell Content</h2>
+          <p class="muted">Cell content wraps by default; apply the truncation class to keep a value on one line.</p>
+        </div>
+        <div class="tako-table__wrapper">
+          <table class="tako-table">
+            <thead>
+              <tr>
+                <th>Record</th>
+                <th>Default wrapping</th>
+                <th>Truncated content</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Network policy</td>
+                <td>This network policy controls how employee devices connect to internal services, which security checks are required, and what happens when a device does not meet the organization's access requirements.</td>
+                <td><span class="tako-table__truncate">This description stays on one line and ends with an ellipsis when it exceeds the content width.</span></td>
+              </tr>
+              <tr>
+                <td>Storage allocation</td>
+                <td>This storage allocation includes the requested capacity, the retention period for archived files, the teams responsible for reviewing usage, and the process for requesting additional space when project needs change.</td>
+                <td><span class="tako-table__truncate">Additional details are clipped at the configured width and shown with an ellipsis.</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Checkbox-selectable Rows -->
+      <section class="section-spacing">
+        <div class="section-heading">
+          <h2>Checkbox-selectable Rows</h2>
+          <p class="muted">Select a row with its checkbox to highlight it.</p>
+        </div>
+        <div class="tako-table__wrapper">
+          <table class="tako-table" data-selectable-table>
+            <thead>
+              <tr>
+                <th class="tako-table__select-cell"><input type="checkbox" data-select-all aria-label="Select all rows" /></th>
+                <th>Asset</th>
+                <th>Owner</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tako-table__select-cell"><input type="checkbox" aria-label="Select Network switch row" /></td>
+                <td>Network switch</td>
+                <td>Infrastructure</td>
+                <td>In service</td>
+              </tr>
+              <tr>
+                <td class="tako-table__select-cell"><input type="checkbox" aria-label="Select Backup server row" /></td>
+                <td>Backup server</td>
+                <td>Platform operations</td>
+                <td>Maintenance</td>
+              </tr>
+              <tr>
+                <td class="tako-table__select-cell"><input type="checkbox" aria-label="Select Office access point row" /></td>
+                <td>Office access point</td>
+                <td>Workplace technology</td>
+                <td>In service</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

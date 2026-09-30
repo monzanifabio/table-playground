@@ -1,0 +1,91 @@
+.tako-table,
+.tako-table th,
+.tako-table td {
+  min-width: 200px;
+}
+
+.tako-table th,
+.tako-table td {
+  height: 54px;
+  padding-left: 12px;
+  padding-right: 12px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.tako-table__truncate {
+  display: block;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tako-table thead th {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tako-table tbody th,
+.tako-table tbody td {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.tako-table__wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.tako-table tr,
+.tako-table tr:nth-child(even) {
+  background-color: #fff;
+}
+
+.tako-table tbody tr:hover > th,
+.tako-table tbody tr:hover > td {
+  background-color: #f2f2f4;
+}
+
+.tako-table tbody tr.tako-table__row--selected > th,
+.tako-table tbody tr.tako-table__row--selected > td {
+  background-color: #bfeafc;
+}
+
+.tako-table tbody tr.tako-table__row--selected:hover > th,
+.tako-table tbody tr.tako-table__row--selected:hover > td {
+  background-color: #7ed4f9;
+}
+
+.tako-table .tako-table__select-cell {
+  width: 56px;
+  min-width: 56px;
+}
+
+.tako-table__wrapper .tako-table tbody tr:last-child > th,
+.tako-table__wrapper .tako-table tbody tr:last-child > td {
+  border-bottom: 0;
+}
+
+.tako-table .tako-table__sticky-col,
+.tako-table th.tako-table__sticky-col,
+.tako-table td.tako-table__sticky-col {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: #fff;
+}
+
+.tako-table thead th.tako-table__sticky-col {
+  z-index: 2;
+}
+
+.tako-table .tako-table__sticky-col--right {
+  right: 0;
+  left: auto;
+}
+
+.tako-table thead th.tako-table__sticky-col--right {
+  z-index: 2;
+}
