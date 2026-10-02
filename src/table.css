@@ -53,11 +53,6 @@
   background-color: #bfeafc;
 }
 
-.tako-table tbody tr.tako-table__row--selected:hover > th,
-.tako-table tbody tr.tako-table__row--selected:hover > td {
-  background-color: #7ed4f9;
-}
-
 .tako-table .tako-table__select-cell {
   width: 56px;
   min-width: 56px;

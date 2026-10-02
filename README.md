@@ -33,13 +33,13 @@ These rules apply to every `.tako-table` automatically. No extra classes are nee
 
 ## Custom classes
 
-| Class                            | Apply to              | Description                                                                                         |
-| -------------------------------- | --------------------- | --------------------------------------------------------------------------------------------------- |
-| `.tako-table__sticky-col`        | `th`, `td`            | Makes the column sticky on the left while the table scrolls horizontally.                           |
-| `.tako-table__sticky-col--right` | `th`, `td`            | Modifier. Use with `.tako-table__sticky-col` to stick the column on the right.                      |
-| `.tako-table__truncate`          | Element inside a cell | Keeps content on one line and truncates it with an ellipsis at `200px`.                             |
-| `.tako-table__select-cell`       | `th`, `td`            | Narrow (`56px`) column for row selection checkboxes.                                                |
-| `.tako-table__row--selected`     | `tr`                  | Selected row background `#BFEAFC`, `#7ED4F9` on hover. Added automatically by the selection script. |
+| Class                            | Apply to              | Description                                                                     |
+| -------------------------------- | --------------------- | ------------------------------------------------------------------------------- |
+| `.tako-table__sticky-col`        | `th`, `td`            | Makes the column sticky on the left while the table scrolls horizontally.       |
+| `.tako-table__sticky-col--right` | `th`, `td`            | Modifier. Use with `.tako-table__sticky-col` to stick the column on the right.  |
+| `.tako-table__truncate`          | Element inside a cell | Keeps content on one line and truncates it with an ellipsis at `200px`.         |
+| `.tako-table__select-cell`       | `th`, `td`            | Narrow (`56px`) column for row selection checkboxes.                            |
+| `.tako-table__row--selected`     | `tr`                  | Selected row background `#BFEAFC`. Added automatically by the selection script. |
 
 ### Sticky columns
 
